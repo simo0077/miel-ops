@@ -430,7 +430,8 @@ h1 em, h2 em { color: var(--amber); font-family: var(--serif); font-weight: 400;
   .notes-visual { max-width: 700px; }
   .article-hero { grid-template-columns: 1fr; gap: 48px; }
   .article-profile { max-width: 480px; }
-  .article-layout { grid-template-columns: 1fr; }
+  .article-layout { grid-template-columns: minmax(0, 1fr); }
+  .article-content, .article-rail { min-width: 0; }
   .article-rail { position: static; flex-flow: row wrap; padding: 0 0 18px; border: 0; border-bottom: 1px solid var(--line); }
   .article-rail span { flex-basis: 100%; }
   .post-feature { grid-template-columns: 110px 1fr 64px; }
