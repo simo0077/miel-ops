@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="list-hero section-pad reveal">
+  <p class="eyebrow"><span></span> MielOps archive</p>
+  <h1>Field notes from the<br><em>infrastructure layer.</em></h1>
+  <p>{{ .Description }}</p>
+</section>
+
+<section class="post-list section-pad">
+  {{ range .Pages.ByDate.Reverse }}
+  <article class="post-list-item reveal">
+    <div class="post-list-meta">
+      <span>{{ .Date.Format "02 Jan 2006" }}</span>
+      <span>{{ .ReadingTime }} min read</span>
+    </div>
+    <div>
+      <div class="topic-row">{{ range .Params.topics }}<span>{{ . }}</span>{{ end }}</div>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Summary }}</p>
+      <small>By {{ delimit .Params.authors " & " }}</small>
+    </div>
+    <a class="post-list-arrow" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">↗</a>
+  </article>
+  {{ end }}
+</section>
+{{ end }}

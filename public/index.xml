@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>MielOps</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on MielOps</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 03 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The work behind reliable systems</title>
+				<link>http://localhost:1313/about/</link>
+				<pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/about/</guid>
+				<description>&lt;p&gt;We work where software meets infrastructure: the layer that turns an application into a service people can depend on. Our role is to make that layer &lt;strong&gt;repeatable, observable, secure, and easier for teams to operate&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-we-do&#34;&gt;What we do&lt;/h2&gt;&#xA;&lt;p&gt;We design and improve cloud infrastructure, automate environments with Infrastructure as Code, and build delivery pipelines that make releases safer and more predictable. The goal is not automation for its own sake. It is to remove fragile manual work and give developers a clear path from an idea to production.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Deploying an Application on Kubernetes</title>
+				<link>http://localhost:1313/posts/deploying-an-application-on-kubernetes/</link>
+				<pubDate>Sun, 02 Aug 2026 09:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/posts/deploying-an-application-on-kubernetes/</guid>
+				<description>Build a small but production-minded Kubernetes deployment: declare the workload, expose it through a Service, watch the rollout, and know where to look when something fails.</description>
+			</item>
+	</channel>
+</rss>

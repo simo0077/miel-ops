@@ -1,0 +1,33 @@
+baseURL = 'https://mielops.com/'
+locale = 'en-US'
+title = 'MielOps'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  author = 'Mohamed Lembarki and Ihsane Elkhaldi'
+  description = 'Field notes on infrastructure, DevOps, reliability, and the systems behind modern software.'
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'Articles'
+    pageRef = '/posts'
+    weight = 20
+  [[menus.main]]
+    name = 'Our work'
+    pageRef = '/about'
+    weight = 30
+
+[outputs]
+  home = ['HTML', 'RSS']

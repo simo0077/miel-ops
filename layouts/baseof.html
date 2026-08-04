@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale | default "en-US" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08100f">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta name="author" content="{{ site.Params.author }}">
+  <title>{{ if .IsHome }}{{ site.Title }} — Infrastructure, DevOps & Reliability{{ else }}{{ .Title }} — {{ site.Title }}{{ end }}</title>
+  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .RelPermalink }}">{{ end }}
+  {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+</head>
+<body class="{{ if .IsHome }}home{{ else }}inner-page{{ end }}">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="MielOps home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" role="img"><path d="M21 3.5 36.2 12v18L21 38.5 5.8 30V12L21 3.5Z"/><path d="m12.5 16.2 8.5-4.8 8.5 4.8v9.6L21 30.6l-8.5-4.8v-9.6Z"/></svg>
+        </span>
+        <span><strong>Miel</strong><small>Ops</small></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        {{ range site.Menus.main }}
+          <a href="{{ .URL }}"{{ if $.IsMenuCurrent .Menu . }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+        <a class="nav-cta" href="{{ "/about/" | relURL }}#connect">Connect <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="brand-mark small" aria-hidden="true">
+          <svg viewBox="0 0 42 42"><path d="M21 3.5 36.2 12v18L21 38.5 5.8 30V12L21 3.5Z"/><path d="m12.5 16.2 8.5-4.8 8.5 4.8v9.6L21 30.6l-8.5-4.8v-9.6Z"/></svg>
+        </span>
+        <div><strong>MielOps</strong><span>Systems, thoughtfully built.</span></div>
+      </div>
+      <p>© {{ now.Year }} Mohamed Lembarki &amp; Ihsane Elkhaldi</p>
+    </footer>
+  </div>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.primary-nav');
+
+    const setNavigationOpen = (open) => {
+      toggle?.setAttribute('aria-expanded', String(open));
+      toggle?.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+      nav?.classList.toggle('open', open);
+    };
+
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      setNavigationOpen(!open);
+    });
+
+    nav?.addEventListener('click', (event) => {
+      if (event.target.closest('a')) setNavigationOpen(false);
+    });
+
+    document.addEventListener('click', (event) => {
+      if (
+        toggle?.getAttribute('aria-expanded') === 'true' &&
+        !toggle.contains(event.target) &&
+        !nav?.contains(event.target)
+      ) {
+        setNavigationOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') {
+        setNavigationOpen(false);
+        toggle.focus();
+      }
+    });
+  </script>
+</body>
+</html>
