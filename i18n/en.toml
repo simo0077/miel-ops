@@ -1,0 +1,210 @@
+[skip_to_content]
+other = "Skip to content"
+[home_aria]
+other = "MielOps home"
+[open_navigation]
+other = "Open navigation"
+[close_navigation]
+other = "Close navigation"
+[primary_navigation]
+other = "Primary navigation"
+[connect]
+other = "Connect"
+[language_selector]
+other = "Language"
+[footer_tagline]
+other = "Systems, thoughtfully built."
+[hero_eyebrow]
+other = "Infrastructure · DevOps · Reliability"
+[hero_title]
+other = "We build the systems<br>behind the <em>software.</em>"
+[hero_intro]
+other = "We’re Mohamed Lembarki and Ihsane Elkhaldi. We design dependable infrastructure, improve delivery pipelines, and help engineering teams ship with confidence."
+[explore_work]
+other = "Explore our work"
+[read_field_notes]
+other = "Read field notes"
+[principle_1]
+other = "Automate the repeatable"
+[principle_2]
+other = "Observe the invisible"
+[principle_3]
+other = "Design for recovery"
+[expertise_eyebrow]
+other = "What we work on"
+[expertise_title]
+other = "Making complexity<br><em>feel manageable.</em>"
+[expertise_intro]
+other = "Good infrastructure should help teams move faster without making reliability someone else’s problem."
+[iac_title]
+other = "Infrastructure<br>as Code"
+[iac_copy]
+other = "Repeatable, reviewable environments that turn infrastructure into a dependable engineering product."
+[delivery_title]
+other = "Delivery<br>Engineering"
+[delivery_copy]
+other = "Fast, secure pipelines that make releasing software a calm and routine event."
+[reliability_title]
+other = "Reliability &<br>Observability"
+[reliability_copy]
+other = "Useful signals, resilient systems, and incident practices that turn surprises into learning."
+[behind_work]
+other = "Behind the work"
+[human_title]
+other = "Systems are technical.<br><em>Reliability is human.</em>"
+[human_copy]
+other = "We care about the whole operating system around software: the architecture, the automation, the feedback loops, and the people who depend on them."
+[read_approach]
+other = "Read about our approach"
+[latest_note]
+other = "Latest field note"
+[production_title]
+other = "From the terminal<br><em>to production.</em>"
+[production_copy]
+other = "Practical walkthroughs, operational patterns, and lessons from building the systems behind software."
+[field_note]
+other = "Field note"
+[min_read]
+other = "min read"
+[by]
+other = "By"
+[building_public]
+other = "Building in public"
+[public_title]
+other = "Practical notes from the<br><em>infrastructure layer.</em>"
+[public_copy]
+other = "MielOps is where we document patterns, lessons, and the thinking behind dependable systems."
+[explore_articles]
+other = "Explore the articles"
+[archive_eyebrow]
+other = "MielOps archive"
+[read_article]
+other = "Read {{ .Title }}"
+[all_notes]
+other = "All field notes"
+[on_this_page]
+other = "On this page"
+[before_begin]
+other = "Before you begin"
+[deployment]
+other = "Deployment"
+[service]
+other = "Service"
+[rollout]
+other = "Rollout"
+[troubleshooting]
+other = "Troubleshooting"
+[production]
+other = "Production"
+[signoff_title]
+other = "Build it. Observe it. Improve it."
+[signoff_copy]
+other = "More practical notes from Mohamed Lembarki and Ihsane Elkhaldi are coming soon."
+[back_home]
+other = "Back to home"
+[career_eyebrow]
+other = "Career & approach"
+[career_title]
+other = "The work behind<br><em>reliable systems.</em>"
+[authors]
+other = "Authors"
+[building_systems]
+other = "Building dependable systems"
+[what_we_do]
+other = "What we do"
+[our_approach]
+other = "Our approach"
+[focus_areas]
+other = "Focus areas"
+[success]
+other = "Success"
+[conversation_title]
+other = "Keep the conversation going."
+[conversation_copy]
+other = "This is a testing-stage blog. More field notes on infrastructure, automation, and reliability are coming next."
+[error_404]
+other = "Error 404"
+[error_title]
+other = "Signal lost.<br><em>Page not found.</em>"
+[error_copy]
+other = "The address may have changed, or this field note has not been published yet."
+[return_home]
+other = "Return to MielOps"
+[profile_role]
+other = "Infrastructure & DevOps"
+[list_title]
+other = "Field notes from the<br><em>infrastructure layer.</em>"
+[infrastructure_illustration]
+other = "Illustration of a healthy infrastructure stack"
+[live]
+other = "Live"
+[availability]
+other = "Availability"
+[deploys]
+other = "Deploys"
+[this_week]
+other = "this week"
+[recovery]
+other = "Recovery"
+[average]
+other = "average"
+[infrastructure]
+other = "Infrastructure"
+[cloud_edge]
+other = "Cloud edge"
+[compute_cluster]
+other = "Compute cluster"
+[data_services]
+other = "Data services"
+[operational]
+other = "operational"
+[engineering_principles]
+other = "Engineering principles"
+[cloud_architecture]
+other = "Cloud architecture"
+[terraform_automation]
+other = "Terraform & automation"
+[environment_design]
+other = "Environment design"
+[cicd_pipelines]
+other = "CI/CD pipelines"
+[release_strategy]
+other = "Release strategy"
+[developer_experience]
+other = "Developer experience"
+[metrics_logs_traces]
+other = "Metrics, logs & traces"
+[slos_alerting]
+other = "SLOs & alerting"
+[incident_response]
+other = "Incident response"
+[visual_service]
+other = "service"
+[visual_principles]
+other = "principles"
+[visual_delivery]
+other = "delivery"
+[visual_strategy]
+other = "strategy"
+[visual_rollback]
+other = "rollback"
+[visual_status]
+other = "status"
+[visual_healthy]
+other = "healthy"
+[deployment_completed]
+other = "Deployment completed"
+[home_title_suffix]
+other = "Infrastructure, DevOps & Reliability"
+[cloud_native]
+other = "Cloud native"
+[iac_applied]
+other = "IaC applied"
+[visual_progressive]
+other = "progressive"
+[visual_automatic]
+other = "automatic"
+[visual_overview]
+other = "system.overview"
+[visual_file]
+other = "platform.yaml"
