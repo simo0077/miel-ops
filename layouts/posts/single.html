@@ -1,31 +1,31 @@
 {{ define "main" }}
 <article class="post-page">
   <header class="post-hero section-pad">
-    <a class="back-link" href="{{ "/posts/" | relURL }}"><span aria-hidden="true">←</span> All field notes</a>
+    <a class="back-link" href="{{ "/posts/" | relLangURL }}"><span aria-hidden="true">←</span> {{ i18n "all_notes" }}</a>
     <div class="topic-row">{{ range .Params.topics }}<span>{{ . }}</span>{{ end }}</div>
     <h1>{{ .Title }}</h1>
     <p>{{ .Description }}</p>
     <div class="post-byline">
       <div class="author-stack" aria-hidden="true"><i>ML</i><i>IE</i></div>
-      <div><strong>{{ delimit .Params.authors " & " }}</strong><span>{{ .Date.Format "02 January 2006" }} · {{ .ReadingTime }} min read</span></div>
+      <div><strong>{{ delimit .Params.authors " & " }}</strong><span>{{ time.Format ":date_long" .Date }} · {{ .ReadingTime }} {{ i18n "min_read" }}</span></div>
     </div>
   </header>
 
   <div class="article-layout post-layout section-pad">
-    <aside class="article-rail" aria-label="On this page">
-      <span>ON THIS PAGE</span>
-      <a href="#before-you-begin">Before you begin</a>
-      <a href="#define-the-deployment">Deployment</a>
-      <a href="#expose-the-application">Service</a>
-      <a href="#apply-and-watch-the-rollout">Rollout</a>
-      <a href="#when-the-rollout-fails">Troubleshooting</a>
-      <a href="#production-considerations">Production</a>
+    <aside class="article-rail" aria-label="{{ i18n "on_this_page" }}">
+      <span>{{ i18n "on_this_page" }}</span>
+      <a href="#before-you-begin">{{ i18n "before_begin" }}</a>
+      <a href="#define-the-deployment">{{ i18n "deployment" }}</a>
+      <a href="#expose-the-application">{{ i18n "service" }}</a>
+      <a href="#apply-and-watch-the-rollout">{{ i18n "rollout" }}</a>
+      <a href="#when-the-rollout-fails">{{ i18n "troubleshooting" }}</a>
+      <a href="#production-considerations">{{ i18n "production" }}</a>
     </aside>
     <div class="article-content post-content">
       {{ .Content }}
       <div class="article-signoff">
         <span class="signoff-mark">M</span>
-        <div><strong>Build it. Observe it. Improve it.</strong><p>More practical notes from Mohamed Lembarki and Ihsane Elkhaldi are coming soon.</p></div>
+        <div><strong>{{ i18n "signoff_title" }}</strong><p>{{ i18n "signoff_copy" }}</p></div>
       </div>
     </div>
   </div>
