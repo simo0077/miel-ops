@@ -1,0 +1,210 @@
+[skip_to_content]
+other = "Aller au contenu"
+[home_aria]
+other = "Accueil MielOps"
+[open_navigation]
+other = "Ouvrir la navigation"
+[close_navigation]
+other = "Fermer la navigation"
+[primary_navigation]
+other = "Navigation principale"
+[connect]
+other = "Nous contacter"
+[language_selector]
+other = "Langue"
+[footer_tagline]
+other = "Des systèmes conçus avec soin."
+[hero_eyebrow]
+other = "Infrastructure · DevOps · Fiabilité"
+[hero_title]
+other = "Nous construisons les systèmes<br>derrière les <em>logiciels.</em>"
+[hero_intro]
+other = "Nous sommes Mohamed Lembarki et Ihsane Elkhaldi. Nous concevons des infrastructures fiables, améliorons les chaînes de livraison et aidons les équipes d’ingénierie à livrer avec confiance."
+[explore_work]
+other = "Découvrir notre travail"
+[read_field_notes]
+other = "Lire nos notes"
+[principle_1]
+other = "Automatiser ce qui se répète"
+[principle_2]
+other = "Observer l’invisible"
+[principle_3]
+other = "Concevoir pour la reprise"
+[expertise_eyebrow]
+other = "Nos domaines d’intervention"
+[expertise_title]
+other = "Rendre la complexité<br><em>plus maîtrisable.</em>"
+[expertise_intro]
+other = "Une bonne infrastructure doit aider les équipes à avancer plus vite sans déléguer la fiabilité à quelqu’un d’autre."
+[iac_title]
+other = "Infrastructure<br>as Code"
+[iac_copy]
+other = "Des environnements reproductibles et révisables qui font de l’infrastructure un produit d’ingénierie fiable."
+[delivery_title]
+other = "Ingénierie de<br>la livraison"
+[delivery_copy]
+other = "Des pipelines rapides et sûrs qui rendent les mises en production calmes et prévisibles."
+[reliability_title]
+other = "Fiabilité et<br>observabilité"
+[reliability_copy]
+other = "Des signaux utiles, des systèmes résilients et des pratiques d’incident qui transforment les surprises en apprentissages."
+[behind_work]
+other = "Derrière le travail"
+[human_title]
+other = "Les systèmes sont techniques.<br><em>La fiabilité est humaine.</em>"
+[human_copy]
+other = "Nous nous intéressons à tout l’écosystème logiciel : l’architecture, l’automatisation, les boucles de retour et les personnes qui en dépendent."
+[read_approach]
+other = "Découvrir notre approche"
+[latest_note]
+other = "Dernière note"
+[production_title]
+other = "Du terminal<br>à la <em>production.</em>"
+[production_copy]
+other = "Des guides pratiques, des méthodes opérationnelles et des retours d’expérience sur les systèmes derrière les logiciels."
+[field_note]
+other = "Note terrain"
+[min_read]
+other = "min de lecture"
+[by]
+other = "Par"
+[building_public]
+other = "Partager notre expérience"
+[public_title]
+other = "Des notes pratiques depuis<br>la couche <em>infrastructure.</em>"
+[public_copy]
+other = "MielOps est l’endroit où nous documentons les méthodes, les leçons et les réflexions qui rendent les systèmes fiables."
+[explore_articles]
+other = "Explorer les articles"
+[archive_eyebrow]
+other = "Archives MielOps"
+[read_article]
+other = "Lire {{ .Title }}"
+[all_notes]
+other = "Toutes les notes"
+[on_this_page]
+other = "Sur cette page"
+[before_begin]
+other = "Avant de commencer"
+[deployment]
+other = "Déploiement"
+[service]
+other = "Service"
+[rollout]
+other = "Mise en service"
+[troubleshooting]
+other = "Dépannage"
+[production]
+other = "Production"
+[signoff_title]
+other = "Construire. Observer. Améliorer."
+[signoff_copy]
+other = "D’autres notes pratiques de Mohamed Lembarki et Ihsane Elkhaldi arrivent bientôt."
+[back_home]
+other = "Retour à l’accueil"
+[career_eyebrow]
+other = "Parcours et approche"
+[career_title]
+other = "Le travail derrière<br>des systèmes <em>fiables.</em>"
+[authors]
+other = "Auteurs"
+[building_systems]
+other = "Construire des systèmes fiables"
+[what_we_do]
+other = "Ce que nous faisons"
+[our_approach]
+other = "Notre approche"
+[focus_areas]
+other = "Nos domaines d’attention"
+[success]
+other = "La réussite"
+[conversation_title]
+other = "Poursuivons la conversation."
+[conversation_copy]
+other = "Ce blog est encore en phase de test. D’autres notes sur l’infrastructure, l’automatisation et la fiabilité arrivent bientôt."
+[error_404]
+other = "Erreur 404"
+[error_title]
+other = "Signal perdu.<br><em>Page introuvable.</em>"
+[error_copy]
+other = "L’adresse a peut-être changé, ou cette note n’est pas encore publiée."
+[return_home]
+other = "Retour à MielOps"
+[profile_role]
+other = "Infrastructure et DevOps"
+[list_title]
+other = "Notes de terrain depuis<br>la couche <em>infrastructure.</em>"
+[infrastructure_illustration]
+other = "Illustration d’une infrastructure saine"
+[live]
+other = "En ligne"
+[availability]
+other = "Disponibilité"
+[deploys]
+other = "Déploiements"
+[this_week]
+other = "cette semaine"
+[recovery]
+other = "Reprise"
+[average]
+other = "moyenne"
+[infrastructure]
+other = "Infrastructure"
+[cloud_edge]
+other = "Périphérie cloud"
+[compute_cluster]
+other = "Cluster de calcul"
+[data_services]
+other = "Services de données"
+[operational]
+other = "opérationnel"
+[engineering_principles]
+other = "Principes d’ingénierie"
+[cloud_architecture]
+other = "Architecture cloud"
+[terraform_automation]
+other = "Terraform et automatisation"
+[environment_design]
+other = "Conception d’environnements"
+[cicd_pipelines]
+other = "Pipelines CI/CD"
+[release_strategy]
+other = "Stratégie de livraison"
+[developer_experience]
+other = "Expérience développeur"
+[metrics_logs_traces]
+other = "Métriques, journaux et traces"
+[slos_alerting]
+other = "SLO et alertes"
+[incident_response]
+other = "Réponse aux incidents"
+[visual_service]
+other = "service"
+[visual_principles]
+other = "principes"
+[visual_delivery]
+other = "livraison"
+[visual_strategy]
+other = "stratégie"
+[visual_rollback]
+other = "retour_arrière"
+[visual_status]
+other = "statut"
+[visual_healthy]
+other = "sain"
+[deployment_completed]
+other = "Déploiement terminé"
+[home_title_suffix]
+other = "Infrastructure, DevOps et fiabilité"
+[cloud_native]
+other = "Cloud natif"
+[iac_applied]
+other = "IaC appliquée"
+[visual_progressive]
+other = "progressive"
+[visual_automatic]
+other = "automatique"
+[visual_overview]
+other = "système.apercu"
+[visual_file]
+other = "plateforme.yaml"
