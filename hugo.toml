@@ -1,12 +1,25 @@
 baseURL = 'https://mielops.com/'
-locale = 'en-US'
 title = 'MielOps'
 enableRobotsTXT = true
 disableKinds = ['taxonomy', 'term']
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
 
 [params]
   author = 'Mohamed Lembarki and Ihsane Elkhaldi'
   description = 'Field notes on infrastructure, DevOps, reliability, and the systems behind modern software.'
+
+[languages]
+  [languages.en]
+    locale = 'en-US'
+    label = 'English'
+    weight = 1
+  [languages.fr]
+    locale = 'fr-FR'
+    label = 'Français'
+    weight = 2
+    [languages.fr.params]
+      description = 'Notes de terrain sur l’infrastructure, le DevOps, la fiabilité et les systèmes derrière les logiciels modernes.'
 
 [markup]
   [markup.highlight]
@@ -14,18 +27,34 @@ disableKinds = ['taxonomy', 'term']
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.parser.attribute]
+      block = true
 
-[menus]
-  [[menus.main]]
+[languages.en.menus]
+  [[languages.en.menus.main]]
     name = 'Home'
     pageRef = '/'
     weight = 10
-  [[menus.main]]
+  [[languages.en.menus.main]]
     name = 'Articles'
     pageRef = '/posts'
     weight = 20
-  [[menus.main]]
+  [[languages.en.menus.main]]
     name = 'Our work'
+    pageRef = '/about'
+    weight = 30
+
+[languages.fr.menus]
+  [[languages.fr.menus.main]]
+    name = 'Accueil'
+    pageRef = '/'
+    weight = 10
+  [[languages.fr.menus.main]]
+    name = 'Articles'
+    pageRef = '/posts'
+    weight = 20
+  [[languages.fr.menus.main]]
+    name = 'Notre travail'
     pageRef = '/about'
     weight = 30
 

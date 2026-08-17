@@ -1,27 +1,27 @@
 {{ define "main" }}
 <section class="hero section-pad">
   <div class="hero-copy reveal">
-    <p class="eyebrow"><span></span> Infrastructure · DevOps · Reliability</p>
-    <h1>We build the systems<br>behind the <em>software.</em></h1>
-    <p class="hero-intro">We’re Mohamed Lembarki and Ihsane Elkhaldi. We design dependable infrastructure, improve delivery pipelines, and help engineering teams ship with confidence.</p>
+    <p class="eyebrow"><span></span> {{ i18n "hero_eyebrow" }}</p>
+    <h1>{{ i18n "hero_title" | safeHTML }}</h1>
+    <p class="hero-intro">{{ i18n "hero_intro" }}</p>
     <div class="hero-actions">
-      <a class="button primary" href="{{ "/about/" | relURL }}">Explore our work <span aria-hidden="true">↗</span></a>
-      <a class="button text-button" href="{{ "/posts/" | relURL }}">Read field notes <span aria-hidden="true">→</span></a>
+      <a class="button primary" href="{{ "/about/" | relLangURL }}">{{ i18n "explore_work" }} <span aria-hidden="true">↗</span></a>
+      <a class="button text-button" href="{{ "/posts/" | relLangURL }}">{{ i18n "read_field_notes" }} <span aria-hidden="true">→</span></a>
     </div>
   </div>
 
-  <div class="hero-visual reveal delay-1" aria-label="Illustration of a healthy infrastructure stack">
+  <div class="hero-visual reveal delay-1" aria-label="{{ i18n "infrastructure_illustration" }}">
     <div class="orbit orbit-one"></div>
     <div class="orbit orbit-two"></div>
     <div class="status-card">
       <div class="card-bar">
         <span class="status-dot"></span>
-        <span>system.overview</span>
-        <span class="muted">LIVE</span>
+        <span>{{ i18n "visual_overview" }}</span>
+        <span class="muted">{{ i18n "live" }}</span>
       </div>
       <div class="system-score">
         <div>
-          <small>AVAILABILITY</small>
+          <small>{{ i18n "availability" }}</small>
           <strong>99.99<span>%</span></strong>
         </div>
         <svg class="sparkline" viewBox="0 0 180 60" aria-hidden="true">
@@ -31,34 +31,34 @@
         </svg>
       </div>
       <div class="system-grid">
-        <div class="metric"><span>Deploys</span><strong>24</strong><small>this week</small></div>
-        <div class="metric"><span>Recovery</span><strong>08<small>m</small></strong><small>average</small></div>
+        <div class="metric"><span>{{ i18n "deploys" }}</span><strong>24</strong><small>{{ i18n "this_week" }}</small></div>
+        <div class="metric"><span>{{ i18n "recovery" }}</span><strong>08<small>m</small></strong><small>{{ i18n "average" }}</small></div>
         <div class="metric wide">
-          <span>Infrastructure</span>
-          <div class="service-row"><i></i><b>Cloud edge</b><small>operational</small></div>
-          <div class="service-row"><i></i><b>Compute cluster</b><small>operational</small></div>
-          <div class="service-row"><i></i><b>Data services</b><small>operational</small></div>
+          <span>{{ i18n "infrastructure" }}</span>
+          <div class="service-row"><i></i><b>{{ i18n "cloud_edge" }}</b><small>{{ i18n "operational" }}</small></div>
+          <div class="service-row"><i></i><b>{{ i18n "compute_cluster" }}</b><small>{{ i18n "operational" }}</small></div>
+          <div class="service-row"><i></i><b>{{ i18n "data_services" }}</b><small>{{ i18n "operational" }}</small></div>
         </div>
       </div>
     </div>
-    <div class="floating-tag tag-cloud"><span>☁</span> Cloud native</div>
-    <div class="floating-tag tag-code"><span>⌁</span> IaC applied</div>
+  <div class="floating-tag tag-cloud"><span>☁</span> {{ i18n "cloud_native" }}</div>
+  <div class="floating-tag tag-code"><span>⌁</span> {{ i18n "iac_applied" }}</div>
   </div>
 </section>
 
-<section class="principles" aria-label="Engineering principles">
-  <div><span>01</span><strong>Automate the repeatable</strong></div>
-  <div><span>02</span><strong>Observe the invisible</strong></div>
-  <div><span>03</span><strong>Design for recovery</strong></div>
+<section class="principles" aria-label="{{ i18n "engineering_principles" }}">
+  <div><span>01</span><strong>{{ i18n "principle_1" }}</strong></div>
+  <div><span>02</span><strong>{{ i18n "principle_2" }}</strong></div>
+  <div><span>03</span><strong>{{ i18n "principle_3" }}</strong></div>
 </section>
 
 <section class="expertise section-pad">
   <div class="section-heading reveal">
     <div>
-      <p class="eyebrow"><span></span> What we work on</p>
-      <h2>Making complexity<br><em>feel manageable.</em></h2>
+      <p class="eyebrow"><span></span> {{ i18n "expertise_eyebrow" }}</p>
+      <h2>{{ i18n "expertise_title" | safeHTML }}</h2>
     </div>
-    <p>Good infrastructure should help teams move faster without making reliability someone else’s problem.</p>
+    <p>{{ i18n "expertise_intro" }}</p>
   </div>
 
   <div class="expertise-grid">
@@ -67,27 +67,27 @@
         <svg viewBox="0 0 32 32"><path d="M16 3 27 9.5v13L16 29 5 22.5v-13L16 3Z"/><path d="m5 9.5 11 6.4 11-6.4M16 16v13"/></svg>
       </div>
       <span class="card-number">01</span>
-      <h3>Infrastructure<br>as Code</h3>
-      <p>Repeatable, reviewable environments that turn infrastructure into a dependable engineering product.</p>
-      <ul><li>Cloud architecture</li><li>Terraform & automation</li><li>Environment design</li></ul>
+      <h3>{{ i18n "iac_title" | safeHTML }}</h3>
+      <p>{{ i18n "iac_copy" }}</p>
+      <ul><li>{{ i18n "cloud_architecture" }}</li><li>{{ i18n "terraform_automation" }}</li><li>{{ i18n "environment_design" }}</li></ul>
     </article>
     <article class="expertise-card reveal delay-1">
       <div class="icon-box" aria-hidden="true">
         <svg viewBox="0 0 32 32"><circle cx="8" cy="16" r="4"/><circle cx="24" cy="8" r="4"/><circle cx="24" cy="24" r="4"/><path d="m11.5 14 9-4.5m-9 8.5 9 4.5"/></svg>
       </div>
       <span class="card-number">02</span>
-      <h3>Delivery<br>Engineering</h3>
-      <p>Fast, secure pipelines that make releasing software a calm and routine event.</p>
-      <ul><li>CI/CD pipelines</li><li>Release strategy</li><li>Developer experience</li></ul>
+      <h3>{{ i18n "delivery_title" | safeHTML }}</h3>
+      <p>{{ i18n "delivery_copy" }}</p>
+      <ul><li>{{ i18n "cicd_pipelines" }}</li><li>{{ i18n "release_strategy" }}</li><li>{{ i18n "developer_experience" }}</li></ul>
     </article>
     <article class="expertise-card reveal delay-2">
       <div class="icon-box" aria-hidden="true">
         <svg viewBox="0 0 32 32"><path d="M4 21h5l3-10 6 15 3-9h7"/><circle cx="16" cy="16" r="13"/></svg>
       </div>
       <span class="card-number">03</span>
-      <h3>Reliability &<br>Observability</h3>
-      <p>Useful signals, resilient systems, and incident practices that turn surprises into learning.</p>
-      <ul><li>Metrics, logs & traces</li><li>SLOs & alerting</li><li>Incident response</li></ul>
+      <h3>{{ i18n "reliability_title" | safeHTML }}</h3>
+      <p>{{ i18n "reliability_copy" }}</p>
+      <ul><li>{{ i18n "metrics_logs_traces" }}</li><li>{{ i18n "slos_alerting" }}</li><li>{{ i18n "incident_response" }}</li></ul>
     </article>
   </div>
 </section>
@@ -95,55 +95,55 @@
 <section id="field-notes" class="field-notes section-pad">
   <div class="notes-visual reveal">
     <div class="code-window">
-      <div class="window-bar"><span></span><span></span><span></span><small>platform.yaml</small></div>
-      <pre><code><b>service:</b> miel-platform
-<b>principles:</b>
+      <div class="window-bar"><span></span><span></span><span></span><small>{{ i18n "visual_file" }}</small></div>
+      <pre><code><b>{{ i18n "visual_service" }}:</b> miel-platform
+<b>{{ i18n "visual_principles" }}:</b>
   - secure_by_default
   - automate_everything
   - measure_what_matters
 
-<b>delivery:</b>
-  strategy: progressive
-  rollback: automatic
-  status: <i>healthy</i></code></pre>
-      <div class="deploy-line"><span>✓</span> Deployment completed <small>42s</small></div>
+<b>{{ i18n "visual_delivery" }}:</b>
+  {{ i18n "visual_strategy" }}: {{ i18n "visual_progressive" }}
+  {{ i18n "visual_rollback" }}: {{ i18n "visual_automatic" }}
+  {{ i18n "visual_status" }}: <i>{{ i18n "visual_healthy" }}</i></code></pre>
+      <div class="deploy-line"><span>✓</span> {{ i18n "deployment_completed" }} <small>42s</small></div>
     </div>
   </div>
   <div class="notes-copy reveal delay-1">
-    <p class="eyebrow"><span></span> Behind the work</p>
-    <h2>Systems are technical.<br><em>Reliability is human.</em></h2>
-    <p>We care about the whole operating system around software: the architecture, the automation, the feedback loops, and the people who depend on them.</p>
-    <a class="inline-link" href="{{ "/about/" | relURL }}">Read about our approach <span aria-hidden="true">→</span></a>
+    <p class="eyebrow"><span></span> {{ i18n "behind_work" }}</p>
+    <h2>{{ i18n "human_title" | safeHTML }}</h2>
+    <p>{{ i18n "human_copy" }}</p>
+    <a class="inline-link" href="{{ "/about/" | relLangURL }}">{{ i18n "read_approach" }} <span aria-hidden="true">→</span></a>
   </div>
 </section>
 
 <section class="latest-writing section-pad">
   <div class="section-heading reveal">
     <div>
-      <p class="eyebrow"><span></span> Latest field note</p>
-      <h2>From the terminal<br><em>to production.</em></h2>
+      <p class="eyebrow"><span></span> {{ i18n "latest_note" }}</p>
+      <h2>{{ i18n "production_title" | safeHTML }}</h2>
     </div>
-    <p>Practical walkthroughs, operational patterns, and lessons from building the systems behind software.</p>
+    <p>{{ i18n "production_copy" }}</p>
   </div>
   {{ range first 1 (where site.RegularPages.ByDate.Reverse "Section" "posts") }}
   <article class="post-feature reveal">
-    <div class="post-feature-index"><span>FIELD NOTE</span><strong>01</strong></div>
+    <div class="post-feature-index"><span>{{ i18n "field_note" }}</span><strong>01</strong></div>
     <div class="post-feature-body">
-      <div class="post-meta"><span>{{ .Date.Format "02 Jan 2006" }}</span><i></i><span>{{ .ReadingTime }} min read</span></div>
+      <div class="post-meta"><span>{{ time.Format ":date_medium" .Date }}</span><i></i><span>{{ .ReadingTime }} {{ i18n "min_read" }}</span></div>
       <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
       <p>{{ .Summary }}</p>
-      <div class="post-authors">By {{ delimit .Params.authors " & " }}</div>
+      <div class="post-authors">{{ i18n "by" }} {{ delimit .Params.authors " & " }}</div>
     </div>
-    <a class="post-feature-arrow" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">↗</a>
+    <a class="post-feature-arrow" href="{{ .RelPermalink }}" aria-label="{{ i18n "read_article" (dict "Title" .Title) }}">↗</a>
   </article>
   {{ end }}
 </section>
 
 <section class="cta-band section-pad reveal">
-  <p class="eyebrow light"><span></span> Building in public</p>
-  <h2>Practical notes from the<br><em>infrastructure layer.</em></h2>
-  <p>MielOps is where we document patterns, lessons, and the thinking behind dependable systems.</p>
-  <a class="button light-button" href="{{ "/posts/" | relURL }}">Explore the articles <span aria-hidden="true">↗</span></a>
+  <p class="eyebrow light"><span></span> {{ i18n "building_public" }}</p>
+  <h2>{{ i18n "public_title" | safeHTML }}</h2>
+  <p>{{ i18n "public_copy" }}</p>
+  <a class="button light-button" href="{{ "/posts/" | relLangURL }}">{{ i18n "explore_articles" }} <span aria-hidden="true">↗</span></a>
   <div class="cta-grid" aria-hidden="true"></div>
 </section>
 {{ end }}
