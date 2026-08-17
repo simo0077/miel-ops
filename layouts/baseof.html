@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.Language.Locale | default "en" }}">
+<html lang="{{ site.Language.Lang | default "en" }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
   <meta name="author" content="{{ site.Params.author }}">
   <title>{{ if .IsHome }}{{ site.Title }} — {{ i18n "home_title_suffix" }}{{ else }}{{ .Title }} — {{ site.Title }}{{ end }}</title>
   {{ range .AllTranslations }}
-  <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
   {{ if eq .Language.Lang "en" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}
   {{ end }}
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
@@ -37,7 +37,7 @@
         <a class="nav-cta" href="{{ "/about/" | relLangURL }}#connect">{{ i18n "connect" }} <span aria-hidden="true">↗</span></a>
       </nav>
       <div class="language-switcher" aria-label="{{ i18n "language_selector" }}">
-        {{ range hugo.Sites }}
+        {{ range site.Sites }}
           {{ $language := .Language }}
           {{ $target := .Home.RelPermalink }}
           {{ if eq $language.Lang $.Site.Language.Lang }}
